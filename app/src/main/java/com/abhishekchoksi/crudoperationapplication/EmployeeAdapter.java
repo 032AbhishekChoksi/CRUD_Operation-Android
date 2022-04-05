@@ -28,13 +28,13 @@ public class EmployeeAdapter extends ArrayAdapter<Employee> {
     List<Employee> employeeList;
     SQLiteDatabase mDatabase;
 
-    public EmployeeAdapter(Context mCtx, int listLayoutRes, List<Employee> employeeList) {
+    public EmployeeAdapter(Context mCtx, int listLayoutRes, List<Employee> employeeList,SQLiteDatabase mDatabase) {
         super(mCtx, listLayoutRes, employeeList);
 
         this.mCtx = mCtx;
         this.listLayoutRes = listLayoutRes;
         this.employeeList = employeeList;
-       // this.mDatabase = mDatabase;
+        this.mDatabase = mDatabase;
     }
 
     @NonNull
